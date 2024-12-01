@@ -21,6 +21,10 @@ Console.WriteLine();
 
 var day = days[chosenDay];
 
+#if DEBUG
+Console.WriteLine("WARNING: DEBUG RESULTS!!!!!!!!!!!!!");
+#endif
+
 Console.WriteLine($"Day {chosenDay} results:");
 int part = 1;
 foreach(var result in day.Execute())
