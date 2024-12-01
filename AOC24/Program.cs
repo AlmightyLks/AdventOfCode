@@ -20,7 +20,10 @@ Console.WriteLine();
 Console.WriteLine();
 
 var day = days[chosenDay];
-var result = day.Execute();
 
-Console.WriteLine($"Day {chosenDay} result:");
-Console.WriteLine(result);
+Console.WriteLine($"Day {chosenDay} results:");
+int part = 1;
+foreach(var result in day.Execute())
+{
+    Console.WriteLine($"Part {part++}: {result}");
+}

@@ -6,7 +6,7 @@ internal class Day1 : IDay
 {
     public int Day => 1;
 
-    public object Execute()
+    public IEnumerable<object> Execute()
     {
         List<int> inputLeft = [];
         List<int> inputRight = [];
@@ -22,6 +22,6 @@ internal class Day1 : IDay
         inputLeft.Sort();
         inputRight.Sort();
 
-        return inputLeft.Select((i, x) => Math.Abs(x - inputRight[i])).Sum();
+        yield return inputLeft.Select((x, i) => Math.Abs(x - inputRight[i])).Sum();
     }
 }

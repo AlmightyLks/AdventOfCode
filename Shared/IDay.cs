@@ -3,5 +3,5 @@
 public interface IDay
 {
     int Day { get; }
-    object Execute();
+    IEnumerable<object> Execute();
 }
