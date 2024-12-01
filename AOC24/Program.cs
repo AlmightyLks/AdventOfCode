@@ -2,7 +2,7 @@
 
 var days = AdventOfCodeManager.FindAllAdventOfCodeDays();
 
-int chosenDay = 0;
+int chosenDay = 1;
 
 do
 {
@@ -15,10 +15,9 @@ do
     }
     Console.WriteLine();
 
-} while (!int.TryParse(Console.ReadLine(), out chosenDay) || !days.ContainsKey(chosenDay));
+} while (days.Count != 1 && !int.TryParse(Console.ReadLine(), out chosenDay) || !days.ContainsKey(chosenDay));
 Console.WriteLine();
 Console.WriteLine();
-
 
 var day = days[chosenDay];
 var result = day.Execute();
