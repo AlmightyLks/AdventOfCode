@@ -10,7 +10,6 @@ internal class Day1 : IDay
     {
         List<int> inputLeft = [];
         List<int> inputRight = [];
-        List<int> distances = [];
 
         foreach (var line in File.ReadAllLines(@".\Days\Day1.cs.txt"))
         {
