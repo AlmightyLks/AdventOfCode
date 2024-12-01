@@ -12,9 +12,7 @@ internal class Day1 : IDay
         List<int> inputRight = [];
         List<int> distances = [];
 
-        var day1Lines = File.ReadAllLines(@".\Days\Day1.cs.txt");
-
-        foreach (var line in day1Lines)
+        foreach (var line in File.ReadAllLines(@".\Days\Day1.cs.txt"))
         {
             var split = line.Split("   ");
             inputLeft.Add(int.Parse(split[0]));
@@ -24,11 +22,6 @@ internal class Day1 : IDay
         inputLeft.Sort();
         inputRight.Sort();
 
-        for (int i = 0; i < inputLeft.Count; i++)
-        {
-            distances.Add(Math.Abs(inputLeft[i] - inputRight[i]));
-        }
-
-        return distances.Sum();
+        return inputLeft.Select((i, x) => Math.Abs(x - inputRight[i])).Sum();
     }
 }
