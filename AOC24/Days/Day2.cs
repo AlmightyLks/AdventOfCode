@@ -1,9 +1,8 @@
 ﻿using Shared;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AOC24.Days;
 
-internal class Day2 : IDay
+public class Day2 : IDay
 {
     public int Day => 2;
 

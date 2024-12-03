@@ -2,7 +2,7 @@
 
 namespace AOC24.Days;
 
-internal class Day1 : IDay
+public class Day1 : IDay
 {
     public int Day => 1;
 
