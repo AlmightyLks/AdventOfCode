@@ -12,13 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Days\Day1.cs.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Days\Day2.cs.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Days\Day3.cs.txt">
+    <None Update="Days\*.cs.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

@@ -45,5 +45,19 @@ namespace Tests
             Assert.Equal(74361272, enumerable.Last());
 #endif
         }
+
+        [Fact]
+        public void Day4()
+        {
+            var day = new Day4();
+            var enumerable = day.Execute();
+#if DEBUG
+            Assert.Equal(18, enumerable.First());
+            //Assert.Equal(48, enumerable.Last());
+#else
+            Assert.Equal(2644, enumerable.First());
+            //Assert.Equal(74361272, enumerable.Last());
+#endif
+        }
     }
 }
